@@ -8,7 +8,7 @@ build_requires:
 configure_requires:
   Module::Build: 0.38
 dynamic_config: 1
-generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.112150'
+generated_by: 'Module::Build version 0.38, CPAN::Meta::Converter version 2.120921'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,14 +17,18 @@ name: MooseX-Exception-Base
 provides:
   MooseX::Exception::Base:
     file: lib/MooseX/Exception/Base.pm
-    version: v0.0.1
+    version: v0.0.2
   MooseX::Exception::Base::Stringify:
     file: lib/MooseX/Exception/Base/Stringify.pm
-    version: v0.0.1
+    version: v0.0.2
 requires:
-  perl: 5.008
+  Moose: 0
+  Moose::Role: 0
+  Path::Class: 0
+  perl: 5.006
+  version: 0
 resources:
   bugtracker: http://rt.cpan.org/NoAuth/Bugs.html?Dist=MooseX::Exception::Base
   license: http://dev.perl.org/licenses/
   repository: git://github.com/ivanwills/MooseX-Exception-Base.git
-version: v0.0.1
+version: v0.0.2

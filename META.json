@@ -4,7 +4,7 @@
       "Ivan Wills <ivan.wills@gmail.com>"
    ],
    "dynamic_config" : 1,
-   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.112150",
+   "generated_by" : "Module::Build version 0.38, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -16,8 +16,8 @@
    "prereqs" : {
       "build" : {
          "requires" : {
-            "Test::More" : 0,
-            "Test::NoWarnings" : 0
+            "Test::More" : "0",
+            "Test::NoWarnings" : "0"
          }
       },
       "configure" : {
@@ -27,18 +27,22 @@
       },
       "runtime" : {
          "requires" : {
-            "perl" : "5.008"
+            "Moose" : "0",
+            "Moose::Role" : "0",
+            "Path::Class" : "0",
+            "perl" : "5.006",
+            "version" : "0"
          }
       }
    },
    "provides" : {
       "MooseX::Exception::Base" : {
          "file" : "lib/MooseX/Exception/Base.pm",
-         "version" : "v0.0.1"
+         "version" : "v0.0.2"
       },
       "MooseX::Exception::Base::Stringify" : {
          "file" : "lib/MooseX/Exception/Base/Stringify.pm",
-         "version" : "v0.0.1"
+         "version" : "v0.0.2"
       }
    },
    "release_status" : "stable",
@@ -53,5 +57,5 @@
          "url" : "git://github.com/ivanwills/MooseX-Exception-Base.git"
       }
    },
-   "version" : "v0.0.1"
+   "version" : "v0.0.2"
 }
